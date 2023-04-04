@@ -26,9 +26,9 @@ class Numbers
             $phpRandomNumber = random_int($this->initialNumber,$i);
             if ($i === $phpRandomNumber)
                 continue;
-            $currentValueOfThePosition = $this->numbers[$i];
+            $currentPositionValue = $this->numbers[$i];
             $this->numbers[$i] = $this->numbers[$phpRandomNumber];
-            $this->numbers[$phpRandomNumber] = $currentValueOfThePosition;
+            $this->numbers[$phpRandomNumber] = $currentPositionValue;
         }
 
         return $this->numbers;
