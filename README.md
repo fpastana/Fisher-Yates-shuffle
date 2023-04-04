@@ -2,7 +2,7 @@
 
 - [PHP 8.2.2](https://php.net): Fast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world.
 - [Composer 2.5.3](https://getcomposer.org): A Dependency Manager for PHP.
-- [PHPUnit 9.5](https://docs.phpunit.de/en/9.5/index.html): Sebastian Bergmann's framework for unit test. PHPUnit requires the dom and json extensions, which are normally enabled by default.
+- [PHPUnit 10](https://docs.phpunit.de/en/10.0/): Sebastian Bergmann's framework for unit test. PHPUnit requires the dom and json extensions, which are normally enabled by default.
 
 ##  Install the composer packages:
 
