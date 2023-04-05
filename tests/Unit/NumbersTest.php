@@ -78,5 +78,18 @@ final class NumbersTest extends TestCase
     {
         return count($array) !== count(array_unique($array));
     }
+
+    public function testNegativeNumberMustThrowException(): void
+    {
+        $this->expectException(Exception::class);
+        $random = new Numbers(-1, 100);
+        $random2 = new Numbers(-1, -100);
+    } 
+
+    public function testInitialNumberLesserThanFinalNumber(): void
+    {
+        $this->expectException(Exception::class);
+        $random = new Numbers(100, 1);
+    }
 }
 

@@ -9,6 +9,14 @@ class Numbers
     private int $finalNumber;
     public function __construct(int $initialNumber = 1, int $finalNumber = 10)
     {
+        if ($this->checkIfValidNumber($initialNumber) === false || $this->checkIfValidNumber($finalNumber) === false) {
+            throw new \Exception('Invalid character was given. Please provided only positive integers');
+        }
+
+        if ($this->checkInconsistency($initialNumber, $finalNumber) === true) {
+            throw new \Exception('initialNumber must be greater than finalNumber');
+        }
+
         $this->initialNumber = $initialNumber;
         $this->finalNumber = $finalNumber;
 
@@ -39,5 +47,22 @@ class Numbers
         for ($i = $this->initialNumber; $i <= $this->finalNumber; $i++) {
             $this->numbers[$i] = $i;
         }
+    }
+
+    private function checkIfValidNumber(int $number): bool
+    {
+        if ($number < 0) {
+            return false;
+        }
+
+        return true;
+    }
+
+    private function checkInconsistency(int $initialNumber, int $finalNumber): bool
+    {
+        if ($initialNumber > $finalNumber) {
+            return true;
+        }
+        return false;
     }
 }
