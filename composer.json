@@ -1,6 +1,6 @@
 {
     "name": "fpastana/fisher-yates-shuffle",
-    "description": "Generate array of random numbers that never repeat themselves",
+    "description": "Generate array of random numbers that never repeat themselves.",
     "authors": [
         {
             "name": "Felipe Pastana",
