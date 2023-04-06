@@ -2,7 +2,7 @@
 
 use PHPUnit\Framework\TestCase;
 
-use App\Numbers;
+use fpastana\Numbers;
 
 final class NumbersTest extends TestCase
 {

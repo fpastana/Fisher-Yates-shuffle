@@ -2,7 +2,7 @@
 
 require __DIR__ . '/vendor/autoload.php';
 
-use App\Numbers;
+use fpastana\Numbers;
 
 if (isset($_GET['initialNumber']) && isset($_GET['finalNumber'])) {
     $random = new Numbers($_GET['initialNumber'], $_GET['finalNumber']);
