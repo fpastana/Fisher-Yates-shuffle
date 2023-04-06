@@ -7,12 +7,7 @@
 ##  Install the composer packages:
 
 ```
-composer install
-```
-
-## Run PHP Server
-```
-php -S 127.0.0.1:8000
+composer require fpastana/fisher-yates-shuffle
 ```
 
 ## Run the Unit Tests
