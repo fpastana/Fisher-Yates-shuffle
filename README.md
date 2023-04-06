@@ -1,13 +1,15 @@
 ## Technology Stack
 
-- [PHP 8.2.2](https://php.net): Fast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world.
+- [PHP 8.0](https://php.net): Fast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world.
 - [Composer 2.5.3](https://getcomposer.org): A Dependency Manager for PHP.
 - [PHPUnit 10](https://docs.phpunit.de/en/10.0/): Sebastian Bergmann's framework for unit test. PHPUnit requires the dom and json extensions, which are normally enabled by default.
+
+# From GitHub:
 
 ##  Install the composer packages:
 
 ```
-composer require fpastana/fisher-yates-shuffle
+composer install
 ```
 
 ## Run the Unit Tests
@@ -18,6 +20,22 @@ composer require fpastana/fisher-yates-shuffle
 ## URL for 10000 randomly generated numbers
 ```
 http://127.0.0.1:8000/?initialNumber=1&finalNumber=10000
+```
+
+# From Composer
+
+```
+composer require fpastana/fisher-yates-shuffle
+```
+
+```php:
+<?php 
+
+use fpastana\Numbers;
+
+$randomNumbers = new Numbers(1, 100);
+
+$aNumbers = $randomNumbers->myShuffle();
 ```
 
 # About the APP
