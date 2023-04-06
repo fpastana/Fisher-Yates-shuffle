@@ -1,16 +1,21 @@
 {
-    "name": "felipepastana/pandell",
+    "name": "fpastana/fisher-yates-shuffle",
+    "description": "Generate array of random numbers that never repeat themselves",
+    "authors": [
+        {
+            "name": "Felipe Pastana",
+            "email": "felipeapastana@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0"
+    },
     "autoload": {
         "psr-4": {
             "App\\": "src"
         }
-    },
-    "authors": [
-        {
-            "name": "Felipe Pastana"
-        }
-    ],
-    "require-dev": {
-        "phpunit/phpunit": "^10.0"
     }
 }
